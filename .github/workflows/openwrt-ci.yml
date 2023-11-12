@@ -46,10 +46,9 @@ jobs:
           echo "src-git small https://github.com/kenzok8/small" >> feeds.conf.default
           git pull
           sed -i 's/luci-app-xlnetacc//' target/linux/x86/Makefile
-          sed -i 's/luci-app-unblockmusic//' target/linux/x86/Makefile
           sed -i 's/autosamba//' target/linux/x86/Makefile
           sed -i 's/luci-app-adbyby-plus//' target/linux/x86/Makefile
-          sed -i 's/luci-app-ssr-plus/luci-app-openclash/' include/target.mk
+          sed -i 's/luci-app-ssr-plus/luci-app-openclash luci-app-passwall/' include/target.mk
           sed -i 's/luci-app-vsftpd//' include/target.mk
           sed -i 's/luci-app-ipsec-vpnd//' target/linux/x86/Makefile
           sed -i 's/luci-app-wireguard//' target/linux/x86/Makefile
