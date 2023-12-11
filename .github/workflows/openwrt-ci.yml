@@ -52,9 +52,9 @@ jobs:
           sed -i 's/luci-app-ssr-plus//' include/target.mk
           sed -i 's/luci-app-vsftpd//' include/target.mk
           sed -i 's/luci-app-ipsec-vpnd//' target/linux/x86/Makefile
-          sed -i 's/luci-app-wireguard//' target/linux/x86/Makefile
+          #sed -i 's/luci-app-wireguard//' target/linux/x86/Makefile
           sed -i 's/192.168.1.1/192.168.1.254/' package/base-files/files/bin/config_generate
-          sed -i 's/default 400/default 1000/' config/Config-images.in
+          #sed -i 's/default 400/default 1000/' config/Config-images.in
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
